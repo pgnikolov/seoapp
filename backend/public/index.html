@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Information Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h1>Website Intelligence Report</h1>
+            <form id="analyzeForm">
+                <div class="form-group">
+                    <label for="urlInput">Enter URL to analyze:</label>
+                    <input type="url" id="urlInput" placeholder="https://example.com" required>
+                    <button type="submit">Analyze</button>
+                </div>
+            </form>
+            <div id="loading" class="loading hidden">Analyzing website...</div>
+            <div id="error" class="error hidden"></div>
+        </div>
+
+        <div id="report" class="report hidden">
+            <!-- Report will be generated here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
